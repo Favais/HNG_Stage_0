@@ -30,7 +30,7 @@ Visit the live demo: [Profile Card Demo](https://hng-0-profilecard.netlify.app)
 1. Clone the repository
 ```bash
 git clone https://github.com/Favais/HNG_Stage_0
-cd profile-card
+cd HNG_Stage_0
 ```
 
 2. Open with VS Code

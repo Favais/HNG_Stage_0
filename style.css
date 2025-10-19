@@ -168,3 +168,9 @@ main {
 .social-links a:hover {
     color: #1da1f2;
 }
+
+.social-links a:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
