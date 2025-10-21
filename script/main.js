@@ -3,8 +3,6 @@ const timeElement = document.getElementById("user-time");
 const updateTime = () => {
     timeElement.textContent = Date.now();
 }
-console.log(timeElement);
-
 
 const links = document.querySelectorAll(".links");
 
