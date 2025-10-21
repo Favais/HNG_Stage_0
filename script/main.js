@@ -7,7 +7,13 @@ const updateTime = () => {
 const links = document.querySelectorAll(".links");
 
 links.forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
+    const href = link.getAttribute("href");
+    // Remove .html from href for comparison
+    const cleanHref = href.replace('.html', '');
+    // Remove .html from current page for comparison
+    const cleanCurrentPage = currentPage.replace('.html', '');
+
+    if (cleanHref === cleanCurrentPage || (cleanCurrentPage === '' && cleanHref === '')) {
         link.classList.add("active");
     }
 });
