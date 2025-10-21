@@ -23,6 +23,10 @@
             </ul>
         </nav>
         <form class="form" id="contactForm" novalidate>
+            <div class="user-time">
+                <p>Current Time:</p>
+                <time data-testid="test-user-time" id="user-time"></time>
+            </div>
             <label for="name"><i class="ri-user-line"></i> Full Name</label>
             <input type="text" placeholder="Enter your full name" id="name" data-testid="test-contact-name" required
                 aria-describedby="error-name">
@@ -47,11 +51,12 @@
             <button type="submit" data-testid="test-contact-submit">Send Message</button>
 
             <p id="success" data-testid="test-contact-success" class="success" hidden>
-                ✅ Message sent successfully!
+                Message sent successfully!
             </p>
         </form>
     </main>
     <script src="./script/main.js"></script>
+    <script src="./script/contact.js"></script>
 
 </body>
 
