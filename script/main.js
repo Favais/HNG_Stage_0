@@ -9,7 +9,7 @@ const links = document.querySelectorAll(".links");
 links.forEach(link => {
     const href = link.getAttribute("href");
     // Remove .html from href for comparison
-    const cleanHref = href.replace('.html', '');
+    const cleanHref = href.replace('.html', '').replace('/', '');
     // Remove .html from current page for comparison
     const cleanCurrentPage = currentPage.replace('.html', '').replace('/', '');
     console.log(cleanCurrentPage, cleanHref);
