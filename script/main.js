@@ -12,6 +12,7 @@ links.forEach(link => {
     const cleanHref = href.replace('.html', '');
     // Remove .html from current page for comparison
     const cleanCurrentPage = currentPage.replace('.html', '').replace('/', '');
+    console.log(cleanCurrentPage, cleanHref);
 
     if (cleanHref === cleanCurrentPage || (cleanCurrentPage === '' && cleanHref === '')) {
         link.classList.add("active");
