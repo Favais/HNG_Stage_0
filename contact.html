@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main data-testid="test-contact-page">
+        <div class="bg-top"></div>
+        <div class="bg-bottom"></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="links" href="/">Home</a></li>
+                <li><a class="links" href="about.html">About Me</a></li>
+                <li><a class="links" href="contact.html">Contact Us</a></li>
+
+            </ul>
+        </nav>
+        <form class="form" id="contactForm" novalidate>
+            <div class="user-time">
+                <p>Current Time:</p>
+                <time data-testid="test-user-time" id="user-time"></time>
+            </div>
+            <label for="name"><i class="ri-user-line"></i> Full Name</label>
+            <input type="text" placeholder="Enter your full name" id="name" data-testid="test-contact-name" required
+                aria-describedby="error-name">
+
+            <p id="error-name" data-testid="test-contact-error-name" class="error"></p>
+
+            <label for="email"><i class="ri-mail-line"></i> Email</label>
+            <input type="email" placeholder="youremail@example.com" id="email" data-testid="test-contact-email" required
+                aria-describedby="error-email">
+            <p id="error-email" data-testid="test-contact-error-email" class="error"></p>
+
+            <label for="subject"><i class="ri-chat-4-line"></i> Subject</label>
+            <input type="text" placeholder="What is this regarding?" id="subject" data-testid="test-contact-subject"
+                required aria-describedby="error-subject">
+            <p id="error-subject" data-testid="test-contact-error-subject" class="error"></p>
+
+            <label for="message"><i class="ri-send-plane-fill"></i> Message</label>
+            <textarea id="message" data-testid="test-contact-message" required minlength="10"
+                aria-describedby="error-message"></textarea>
+            <p id="error-message" data-testid="test-contact-error-message" class="error"></p>
+
+            <button type="submit" data-testid="test-contact-submit">Send Message</button>
+
+            <p id="success" data-testid="test-contact-success" class="success" hidden>
+                Message sent successfully!
+            </p>
+        </form>
+    </main>
+    <script src="./script/main.js"></script>
+    <script src="./script/contact.js"></script>
+
+</body>
+
+</html>
